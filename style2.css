@@ -1,0 +1,31 @@
+```css
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,serif;background:#111;color:#eee;line-height:1.7}
+nav{height:70px;padding:0 8%;display:flex;align-items:center;justify-content:space-between;background:#111;position:sticky;top:0;z-index:5}
+nav h2{letter-spacing:5px;color:#d6b36a}
+nav a{color:#ddd;text-decoration:none;margin-left:25px;font:14px Arial}
+nav a:hover{color:#d6b36a}
+.hero{min-height:85vh;padding:15vh 10%;display:flex;align-items:center;background:linear-gradient(90deg,#000d,#0004),url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1600&q=80") center/cover}
+.hero div{max-width:600px}.hero p:first-child,.label{color:#d6b36a;letter-spacing:4px;font:12px Arial;font-weight:bold}
+h1{font-size:clamp(50px,8vw,90px);line-height:1.05;margin:20px 0}
+h1 span{color:#d6b36a}
+.hero p:not(:first-child){color:#ccc;max-width:500px;margin-bottom:30px}
+.btn{display:inline-block;padding:12px 25px;border:1px solid #d6b36a;color:#d6b36a;text-decoration:none;font:12px Arial;letter-spacing:2px}
+.btn:hover{background:#d6b36a;color:#111}
+section:not(.hero){padding:90px 10%;text-align:center}
+section h2{font-size:42px;margin:10px 0 35px}
+.menu{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+article{padding:35px 20px;border:1px solid #333;background:#171717}
+article:hover{border-color:#d6b36a;transform:translateY(-5px);transition:.3s}
+article h3{color:#d6b36a;font-size:23px}
+article p,.about p{color:#aaa}
+article b{display:block;margin-top:15px;color:#fff}
+.about{background:#171717}
+.about p:last-child{max-width:650px;margin:auto}
+footer{text-align:center;padding:50px 20px;border-top:1px solid #333}
+footer h2{color:#d6b36a;letter-spacing:5px}
+footer p{color:#aaa}
+small{color:#666}
+@media(max-width:700px){nav a{margin-left:10px}.menu{grid-template-columns:1fr}section h2{font-size:32px}}
+
